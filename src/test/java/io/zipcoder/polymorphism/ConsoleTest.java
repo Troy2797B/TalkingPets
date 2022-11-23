@@ -10,6 +10,7 @@ public class ConsoleTest extends TestCase {
     Console console = new Console();
     @Test
     public void howManyPetsTest(){
+
     }
 
 }

@@ -8,18 +8,29 @@ public class Console {
     // pet each one is, along with each pet's name.
     // For now your program should just hold onto the user input
     // and print out the list at the end; we'll modify this in part 3.
-    Scanner objScan = new Scanner(System.in);
-    public void howManyPets(){
+
+    public int howManyPets(){
+        Scanner objScan = new Scanner(System.in);
         System.out.println("How many pets do you have?");
         int numOfPets = objScan.nextInt();
-        System.out.println(numOfPets);
+        return numOfPets;
     }
-    public void whatKindOfPets(){
-        System.out.println("What kind of pets do you have?");
-        String typeOfPets = objScan.nextLine();
+    public  String whatKindOfPets(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What kind of pet is this one? Cat, dog, or rabbit?");
+        String typeOfPets = scan.nextLine();
+        return typeOfPets;
     }
-    public void whatIsTheNameOfEachPet(){
-        System.out.println("What is the name of your pets?");
-        String nameOfPets = objScan.nextLine();
+    public String whatIsTheNameOfEachPet(){
+        Scanner obj = new Scanner(System.in);
+        System.out.println("What is the name of your pet?");
+        String nameOfPets = obj.nextLine();
+        return nameOfPets;
+    }
+    public String anymorePets(){
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Do you have anymore?");
+        String answer = obj.nextLine();
+        return answer;
     }
 }
